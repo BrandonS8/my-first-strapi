@@ -95,6 +95,14 @@ export default BlogPosts
 
 See, simple as that.
 
+## Future Ideas
+
+Some sort of markdown processing is a must add.
+
+I plan to build my own front end for creating, modifying, and deleting content. This will make it easy for the users and I can also tweak it how I like. I will need to add authentication, I think JWTs will work just fine.
+
+I may play with some static site generators such as [Gatsby](https://www.gatsbyjs.org/) to try and blow your mind with performance.
+
 ## Closing
 
 That's all for now.
