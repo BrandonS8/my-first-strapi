@@ -22,5 +22,12 @@ A very very very nice UI.
 
 There is a lot of easy to use controls for the environment. You have three defined environments in settings, Development, Production, Staging. You can easily control individual settings for these in the configurations tab.
 
-![UI for requests i the config](./readme-images/request-settings.png)
-![UI for settings in the config](./readme-images/security-settings.png)
+<p float="left" align='middle'>
+<img src="./readme-images/request-settings.png" alt='UI for requests i the config' width="200" height="auto"/>
+
+<img src="./readme-images/security-settings.png" alt='UI for settings in the config' width="224" height="auto" />
+</p>
+
+Everything is super clean and simple. Wanna add a new content type? Use the builder and do it in no time. Managing users, roles, permissions, files, everything is just so intuitive and simple. I am very impressed.
+
+![UI on the content type builder page](./readme-images/content-types.png)
