@@ -17,3 +17,10 @@ When you first launch the app you create the initial login, then it takes you to
 The first page you see has a link to a getting started guide on their documentation. Pretty standard. Left side bar is how you navigate to each section just like wordpress.
 
 A very very very nice UI.
+
+### Things I Noticed First
+
+There is a lot of easy to use controls for the environment. You have three defined environments in settings, Development, Production, Staging. You can easily control individual settings for these in the configurations tab.
+
+![UI for requests i the config](./readme-images/request-settings.png)
+![UI for settings in the config](./readme-images/security-settings.png)
