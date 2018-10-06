@@ -20,7 +20,7 @@ A very very very nice UI.
 
 ## Things I Noticed First
 
-There is a lot of easy to use controls for the environment. You have three defined environments in settings, Development, Production, Staging. You can easily control individual settings for these in the configurations tab.
+There is a lot of easy to use controls for the environment. You have three defined environments in settings: Development, Production, and Staging. You can easily control individual settings for these in the configurations tab.
 
 <p float="left" align='middle'>
 <img src="./readme-images/request-settings.png" alt='UI for requests i the config' width="350" height="auto"/>
@@ -46,7 +46,7 @@ To get started I made a content type called post that has a title, content, and 
 
 ![UI of the permissions page](./readme-images/allowing-public-api.png)
 
-I made a react component to fetch the posts and display them. It was super simple and I used axios for the get request. To test I created two post entries. I have not added any markdown processing yet but it's worth noting the text editor in Scrapi's admin panel uses markdown when you use it's format buttons. It's worth noting you can do more than just get data, you can post data to the server and much more.
+I made a react component to fetch the posts and display them. It was super simple and I used axios for the get request. To test I created two post entries. I have not added any markdown processing yet but it's worth noting the text editor in Strapi's admin panel uses markdown when you use it's format buttons. It's also worth noting you can do more than just get data, you can post data to the server and much more.
 
 ![My posts page](./readme-images/my-posts-page.png)
 
@@ -99,4 +99,4 @@ See, simple as that.
 
 That's all for now.
 
-I strongly encourage you checkout [Strapi](https://strapi.io) and give it a shot. Check [their documentation](https://strapi.io/documenation) to see all the possibilites. You can really have full control with a great UI. You can even build your own UI if you want, everything is so easy to customize. I think this is something I am going to use for many new projects.
+I strongly encourage you checkout [Strapi](https://strapi.io) and give it a shot. Check [their documentation](https://strapi.io//documentation/) to see all the possibilites. You can really have full control with a great UI. You can even build your own UI if you want, everything is so easy to customize. I think this is something I am going to use for many new projects.
