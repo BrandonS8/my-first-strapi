@@ -1,34 +1,11 @@
 import React, { Component } from 'react'
 import './App.css'
-import { Route, Switch, Link, NavLink } from 'react-router-dom'
+import { Route, Switch, Link, NavLink, Redirect } from 'react-router-dom'
 import axios from 'axios'
 import BlogPosts from './components/BlogPosts/BlogPosts'
 import Login from './components/Login/Login'
 import Profile from './components/Profile/Profile'
-import checkToken from './utils/Auth'
 
-function userCheck(ctx) {
-  var tok = localStorage.getItem('token')
-  if (tok) {
-    ctx.setState({
-      token: tok
-    })
-  }
-  function getUser(user, context) {
-    if (user) {
-      context.setState({
-        user: user.username,
-        email: user.email,
-        authenticated: true
-      })
-    } else {
-      context.setState({
-        loggedIn: false
-      })
-    }
-  }
-  checkToken(tok, getUser, ctx)
-}
 class App extends Component {
   constructor() {
     super()
@@ -114,10 +91,11 @@ class App extends Component {
     return (
       <div className="App">
         <nav>
+          <Link to="/profile">View Profile</Link>
           {this.state.isLoggedIn ? (
             <a onClick={this.logout}>Logout</a>
           ) : (
-            <Link to="/profile">View Profile</Link>
+            <Link to="/login">Login</Link>
           )}
         </nav>
         <Switch>
@@ -131,7 +109,15 @@ class App extends Component {
               />
             )}
           />
-          <Route path="/profile" render={() => <Profile />} />
+          <Route
+            path="/profile"
+            render={() => (
+              <Profile
+                user={this.state.user}
+                isLoggedIn={this.state.isLoggedIn}
+              />
+            )}
+          />
           <Route path="/" render={() => <BlogPosts />} />
         </Switch>
       </div>
