@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import moment from 'moment'
+import './Profile.css'
 class Profile extends Component {
   render() {
     console.log(this.props.user)
@@ -11,6 +12,10 @@ class Profile extends Component {
             {this.props.user.username}
             's Profile
           </h2>
+          <img
+            className="profile-pic"
+            src={`http://localhost:1337${this.props.user.avatar.url}`}
+          />
           <p>Role: {this.props.user.role.name}</p>
           <p>Email: {this.props.user.email}</p>
           <p>

@@ -91,9 +91,12 @@ class App extends Component {
     return (
       <div className="App">
         <nav>
-          <Link to="/profile">View Profile</Link>
+          <Link to="/">Home</Link>
           {this.state.isLoggedIn ? (
-            <a onClick={this.logout}>Logout</a>
+            [
+              <Link to="/profile">View Profile</Link>,
+              <a onClick={this.logout}>Logout</a>
+            ]
           ) : (
             <Link to="/login">Login</Link>
           )}
